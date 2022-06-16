@@ -1,35 +1,33 @@
 #include <iostream>
 using namespace std;
+int sums[7][2];
 int main() {
     int length;
     cin >> length;
-    int input[length + 1];
-    input[0] = 0;
+    int psum = 0;
     int t;
-    for (int i = 1; i <= length; i++){
+    for (int i = 0; i < length; i++){
         cin >> t;
-        t += input[i - 1];
-        t = t % 7;
-        input[i] = t;
+        psum += t;
+        psum %= 7;
+        if (psum == 0){
+            sums[0][1] = i + 1;//edge case
+        }
+        else{
+            if (sums[psum][0] == 0){
+                sums[psum][0] = i + 1;
+            }
+            else{
+                sums[psum][1] = i + 1;
+            }
+        }
     }
 
-    int minimum[7];
-    int maximum[7];
-    for (int i = 0; i < 7; i++){
-        minimum[i] = 214748364;
-        maximum[i] = -214748364;
+    int ans = 0;
+    for (auto & sum : sums){
+        ans = max(sum[1] - sum[0], ans);
     }
+    cout << ans;
 
-    for (int i = 0; i < length; i++){
-        minimum[input[i]] = min(i, minimum[input[i]]);
-        maximum[input[i]] = max(i, maximum[input[i]]);
-    }
-
-    int output = 0;
-    for (int i = 0; i < length; i++){
-        output = max(output, maximum[i] - minimum[i]);
-    }
-    cout << output;
-
-    return 0;
 }
+//3 1 2 1 3 3 6
