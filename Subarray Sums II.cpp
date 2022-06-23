@@ -7,7 +7,7 @@ int main(){
     cin >> length >> target;
     length++;
     int psum[length];
-    map<int, int> map;
+    map<long int, long int> map;
     psum[0] = 0;
     for (int i = 1; i < length; i++){
         cin >> t;
@@ -16,7 +16,7 @@ int main(){
 
 //    map[0] = 1;
 
-    int output = 0;
+    long int output = 0;
     for (int i = 1; i < length; i++){
 //        cout << - (target - psum[i]) << "\n";
         map[psum[i]]++;
