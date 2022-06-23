@@ -3,7 +3,6 @@
 //int main() {
 //    unsigned long long int length, questions;
 //    cin >> length >> questions;
-//
 //    unsigned long long int one[length];
 //    unsigned long long int two[length];
 //    unsigned long long int three[length];

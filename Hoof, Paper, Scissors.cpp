@@ -42,6 +42,5 @@
 //        output = max(output, s[i] + (h[length - 1] - h[i]));
 //
 //    }
-//
 //    cout << output;
 //}

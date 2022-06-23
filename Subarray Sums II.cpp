@@ -3,21 +3,21 @@
 
 using namespace std;
 int main(){
-    int length, target, t;
+    long long int length, target, t;
     cin >> length >> target;
     length++;
-    int psum[length];
-    map<long int, long int> map;
+    long long int psum[length];
+    map<long long int, long long int> map;
     psum[0] = 0;
-    for (int i = 1; i < length; i++){
+    for (long long int i = 1; i < length; i++){
         cin >> t;
         psum[i] = psum[i - 1] + t;
     }
 
 //    map[0] = 1;
 
-    long int output = 0;
-    for (int i = 1; i < length; i++){
+    long long int output = 0;
+    for (long long int i = 1; i < length; i++){
 //        cout << - (target - psum[i]) << "\n";
         map[psum[i]]++;
         if (map.find(- (target - psum[i])) != map.end()){
