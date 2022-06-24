@@ -14,11 +14,11 @@
 //        psum[i] = psum[i - 1] + t;
 //    }
 //
-////    map[0] = 1;
+//    map[0] = 1;
 //
 //    long long int output = 0;
 //    for (long long int i = 1; i < length; i++){
-////        cout << - (target - psum[i]) << "\n";
+//        cout << - (target - psum[i]) << "\n";
 //        map[psum[i]]++;
 //        if (map.find(- (target - psum[i])) != map.end()){
 //            output += map[- (target - psum[i])];
