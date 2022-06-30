@@ -30,6 +30,5 @@
 //        cin >> x1 >> y1 >> x2 >> y2;
 //        cout << psum[x2][y2] - psum[x1 - 1][y2] - psum[x2][y1 - 1] + psum[x1 - 1][y1 - 1] << "\n";
 //    }
-//
 //    return 0;
 //}
