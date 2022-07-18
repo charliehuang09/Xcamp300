@@ -6,7 +6,7 @@ int main(){
     int lights, inputs, k;
     cin >> lights >> k >> inputs;
 //    k--;//CHANGED
-    int input[lights];
+    int input[lights + 1];
     memset(input, 0, sizeof(input));
 
     int t, sum = 0;
