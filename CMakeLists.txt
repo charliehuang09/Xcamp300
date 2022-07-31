@@ -3,4 +3,4 @@ project(Xcamp300)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(Xcamp300 "Breed Counting.cpp" "Subsequences Summing to Sevens.cpp" "Subarray Sums I.cpp" "Restaurant Customers.cpp" "Hoof, Paper, Scissors.cpp" "Subarray Sums II.cpp" "Forest Queries .cpp" "Sum of Two Values.cpp" "Sum of three values.cpp" "Remove duplication and sort.cpp" "Maximum Subarray Sum I.cpp" "Haybale Stacking.cpp" "Diamond Collector.cpp" "Why Did the Cow Cross the Road II.cpp" "Binary Search Practice.cpp" "Binary Search.cpp")
+add_executable(Xcamp300 "Breed Counting.cpp" "Subsequences Summing to Sevens.cpp" "Subarray Sums I.cpp" "Restaurant Customers.cpp" "Hoof, Paper, Scissors.cpp" "Subarray Sums II.cpp" "Forest Queries .cpp" "Sum of Two Values.cpp" "Sum of three values.cpp" "Remove duplication and sort.cpp" "Maximum Subarray Sum I.cpp" "Haybale Stacking.cpp" "Diamond Collector.cpp" "Why Did the Cow Cross the Road II.cpp" "Binary Search Practice.cpp" "Binary Search.cpp" "Cutting Wood.cpp")
