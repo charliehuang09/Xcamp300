@@ -7,6 +7,7 @@
 #include <algorithm>
 #define ll long long
 using namespace std;
+const string albert = "Albert is a Furry\n";
 int main(){
     ios_base::sync_with_stdio(0);
     cin.tie(0);
