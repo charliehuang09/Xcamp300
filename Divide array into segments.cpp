@@ -18,7 +18,7 @@
 //        while(value + input[index] <= x){
 //            value += input[index];
 //            index++;
-//            if (index == length){//ednge case
+//            if (index == length){//edge case
 //                return true;
 //            }
 //        }
